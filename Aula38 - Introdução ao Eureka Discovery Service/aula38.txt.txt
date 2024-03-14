@@ -1,0 +1,23 @@
+Desenvolvido pela Netflix, o Eureka serve como um catálogo de todos os serviços disponivéis em um sistema.
+
+O Eureka Service Discovery é uma ferramenta desenvolvida pela Netflix para facilitar o gerenciamento e descoberta de serviços em um ambiente 
+de microservices. Aqui está um resumo de como funciona:
+
+1- Registro de Serviços: Cada instância de um serviço registra-se no servidor do Eureka quando é iniciada. Isso inclui informações 
+como nome do serviço, endereço IP, porta, etc.
+
+2- Heartbeat: As instâncias do serviço enviam pulsos regulares (heartbeats) para o servidor Eureka para indicar que estão ativas e 
+em execução. Isso ajuda a garantir que o registro esteja sempre atualizado e que as instâncias que não estão mais disponíveis sejam removidas.
+
+3- Descoberta de Serviços: Quando um serviço precisa se comunicar com outro serviço, em vez de usar uma configuração estática para 
+encontrar o endereço e a porta do serviço, ele consulta o servidor Eureka para descobrir as instâncias disponíveis desse serviço.
+
+4- Balanceamento de Carga: O Eureka também pode fornecer informações sobre várias instâncias de um serviço. Isso permite implementar 
+estratégias de balanceamento de carga, como escolher a instância mais próxima geograficamente ou distribuir as solicitações 
+uniformemente entre todas as instâncias disponíveis.
+
+5- Resiliência: O Eureka é projetado para ser altamente resiliente. Ele é capaz de lidar com falhas e escalonamento automático para 
+lidar com um grande número de solicitações de descoberta de serviços.
+
+Em resumo, o Eureka Service Discovery simplifica a arquitetura de microservices, permitindo que os serviços se registrem dinamicamente 
+e se descubram facilmente, facilitando a escalabilidade e a resiliência das aplicações distribuídas.
