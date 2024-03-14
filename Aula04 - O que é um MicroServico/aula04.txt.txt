@@ -1,0 +1,11 @@
+O que é um MicroServiço?
+
+É um termo cunhado dentro da Arquitetura de Software para designar uma forma de desenvolver Sistemas onde cada pedaço possa 
+ser pensado, desenvolvido e disponibilizado de forma independente.
+
+Ele paralisa o desenvolvimento, permitindo que pequenas equipes autônomas desenvolvam, implantem e escalem seus respectivos serviços.
+
+- É um Web Service.
+- É um serviço pequeno e responsável por uma coisa.
+- É também um serviço que está configurado para funcionar na nuvem e é facilmente escalonável ao dividir um grande aplicativo e sua
+funcionalidade em uma tela pequena com microserviços.
